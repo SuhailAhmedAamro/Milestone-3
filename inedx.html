@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Static Interactive Resume Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form id="resume-form">
+<fieldset><legend>Personal Information</legend>
+<p>Name:<input type="text" id="name"><br></p>
+<p>Email:<input type="email" id="email"><br></p>
+<p>Phone:<input type="tel" id="phone"><br> </p></fieldset>
+<fieldset><legend>Education</legend><textarea id="education" rows="3"></textarea></fieldset>
+<fieldset><legend>Skills</legend><input type="text" id="skills" ><br></fieldset>
+<fieldset><legend>Work Experience</legend><textarea id="work-experience" rows="4"></textarea></fieldset>
+<p>Profile Picture:</p><input type="file" id="profile-pic"><br>
+<img id="profile-pic-preview" src="#" style="display: none; width: 150px; height: 150px; border-radius: 50%;">
+<button id="generate-resume">Generate Resume</button>
+</form>
+<div id="resume-preview" style="display: none;">
+<h2>Resume</h2>
+<div id="resume-content"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
